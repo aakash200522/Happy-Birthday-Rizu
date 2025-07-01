@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday My Love! Rijuvana!!!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/Style.css">
+</head>
+<body>
+    <!-- Decorative bubbles -->
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+
+    <!-- Floating hearts -->
+    <div class="floating-heart">❤</div>
+    <div class="floating-heart">💕</div>
+    <div class="floating-heart">🪄</div>
+    <div class="floating-heart">💖</div>
+    <div class="floating-heart">💘</div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Notification Controls -->
+    <div class="notification-controls">
+        <h3>Hourly Love Messages</h3>
+        <div class="toggle-container">
+            <span>Notifications:</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="notificationToggle" checked>
+                <span class="slider"></span>
+            </label>
+        </div>
+        <button class="btn" id="testNotificationBtn" style="padding: 10px 20px; font-size: 1rem;">
+            Test Notification
+        </button>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>Happy Birthday di Pondatiiii... <span class="heart">💕</span></h1>
+                <div class="birthday-date">July 04, 2007 - Celebrating 17 Amazing Years! Step into 18</div>
+                <p style="font-size: 1.4rem; max-width: 800px; margin: 20px auto; line-height: 1.6; background: rgba(255,255,255,0.3); padding: 15px; border-radius: 15px;">
+                    To the most wonderful girlfriend in the world! Today is your day, and I hope it's filled with all the joy and magic you bring to my life.
+                </p>
+            </div>
+        </header>
+
+        <section class="countdown-section">
+            <h2 class="countdown-title">Countdown to Your Special Day</h2>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">00</div>
+                    <div class="countdown-label">Days</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">00</div>
+                    <div class="countdown-label">Hours</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">00</div>
+                    <div class="countdown-label">Minutes</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="seconds">00</div>
+                    <div class="countdown-label">Seconds</div>
+                </div>
+            </div>
+        </section>
+
+                <!-- Tamil Messages 
+        <section id="message">
+            <h2 class="section-title">My Feelings for You</h2>
+            <div class="tamil-message">
+                <div class="message active">உன் பிறந்த நாள் எனக்கு பரிசாக இருக்கிறதே 💝</div>
+                <div class="message">என் வாழ்கையின் இனிமையான தருணம் நீ தான் 💕</div>
+                <div class="message">உன்னை போல் ஒருவர் வாழ்க்கையில் கிடைப்பது அரிது 🌹</div>
+                <div class="message">உன் முகத்தில் எப்போதும் புன்னகை மலரட்டும் 😊</div>
+            </div>
+            <script> // Tamil Messages Rotation
+        let currentMessage = 0;
+        const message = document.querySelectorAll('.message');
+        
+        function rotateMessage() {
+            messages[currentMessage].classList.remove('active');
+            currentMessage = (currentMessage + 1) % messages.length;
+            messages[currentMessage].classList.add('active');
+        }
+        
+        setInterval(rotateMessage, 5000);
+        </script>
+        </section>
+        -->
+
+<!--
+        <section class="gallery-section">
+            <h2 class="section-title">Our Magical Memories</h2>
+            <div class="gallery-container">
+                <div class="gallery-item">
+                    <div style="background:linear-gradient(45deg, #ff9a9e, #fad0c4); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">❤️</div>
+                    <div class="memory-text">Our First Kiss ❤️</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="background:linear-gradient(45deg, #a18cd1, #fbc2eb); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">🌄</div>
+                    <div class="memory-text">Sunset Together 🌅</div>
+                </div>
+                <div class="gallery-item">
+                    <div style="background:linear-gradient(45deg, #ffecd2, #fcb69f); width:100%; height:100%; display:flex; align-items:center; justify-content:center; color:white; font-size:3rem;">🎂</div>
+                    <div class="memory-text">Last Birthday 🎉</div>
+                </div>
+            </div>
+        </section>
+-->
+        <section class="messages-section">
+            <h2 class="section-title">Special Messages for You</h2>
+            <div class="messages-container">
+                <i class="fas fa-heart heart-icon"></i>
+                <i class="fas fa-heart heart-icon"></i>
+                <i class="fas fa-heart heart-icon"></i>
+                <i class="fas fa-heart heart-icon"></i>
+                <div class="message" id="message">Every moment with you is magical. Today, I celebrate the amazing person you are!</div>
+            </div>
+            <button class="btn" id="newMessageBtn">
+                <i class="fas fa-gift"></i> Show Another Sweet Message
+            </button>
+        </section>
+
+         <!-- Love Letter -->
+        <section id="letter">
+            <h2 class="section-title">My Love Letter to You</h2>
+            <div class="letter-container">
+                <div class="letter-content">
+                    <textarea id="love-letter" placeholder="Write your personal love message here...">இனிய பிறந்தநாள் வாழ்த்துக்கள்!,
+
+
+இன்று இந்த சிறப்பு நாளில்,
+என் வாழ்வில் நீ என்னவள் என்பதைச் சொல்லித் தீரவேண்டும்!
+உன்னைச் சந்தித்த அந்த நொடி முதல்,
+என் வாழ்க்கை மகிழ்ச்சியின் மழையாய்,
+காதலின் காற்றாய் மாறிவிட்டது.
+
+உன் புன்னகை, என்னுடைய இருண்ட நேரங்களுக்கு விடியலின் வெளிச்சம்;
+உன் சிரிப்போ, காதுகளில் இசையும் இனிமையான குயில் கீதம்!
+
+உன் அன்பு நெஞ்சம், அழகின் ஒளி,
+ஆதரவின் சூடு - நீயே என் உலகின் அதிசயம்!
+உன்னுடன் கழியும் ஒவ்வொரு கணமும்
+எனக்கு வாழ்வின் அரும்பரிசு;
+நான் என் இதயத்தில் புதைத்து வைத்த பொக்கிஷம்!
+
+என் அன்பே, உனக்கு இனிய பிறந்தநாள்!
+இந்த ஆண்டு நீ தகும் எல்லா மகிழ்ச்சியும்
+உன் காலடியில் வீழ்ந்திடட்டும்!
+உன்னுடன் பின்னுவதற்காகக் காத்திருக்கும்
+இனிய நினைவுகளின் மாலையை நான் ஏற்கிறேன்!
+
+
+Forever yours,
+Aakash(Your love🖤🤍)</textarea>
+                </div>
+                <div class="letter-footer">
+                    With all my love ❤️
+                </div>
+            </div>
+        </section>
+
+
+        
+        <footer>
+            <p>Made with <i class="fas fa-heart" style="color: var(--accent);"></i> for the most special person in my life</p>
+            <p>You make every day worth living. Happy 17th Birthday!</p>
+            <div class="signature">Forever Yours</div>
+        </footer>
+    </div>
+<div class="empty">
+
+</div>
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <div class="play-btn" id="play-btn">
+            <i class="fas fa-play"></i>
+        </div>
+        <div class="music-title" id="music-title">This is for you dii Pondatiii...</div>
+    </div>
+
+    <script src="JS/Script.js">
+    </script>
+</body>
+</html>
