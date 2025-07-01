@@ -282,7 +282,7 @@
         // Create audio element
         const audio = new Audio();
         // Using a placeholder for the audio - in a real implementation, you would use your own MP3 file
-        audio.src = "https://youtube.com/shorts/-lOLivciqYc?si=6Sz9fkFVOwbWhcEf";
+        audio.src = "IMG/Mugai Mazhai.mp3";
         
         playBtn.addEventListener('click', () => {
             if (audio.paused) {
