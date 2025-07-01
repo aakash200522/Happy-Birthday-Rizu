@@ -282,7 +282,7 @@
         // Create audio element
         const audio = new Audio();
         // Using a placeholder for the audio - in a real implementation, you would use your own MP3 file
-        audio.src = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+        audio.src = "https://youtube.com/shorts/-lOLivciqYc?si=6Sz9fkFVOwbWhcEf";
         
         playBtn.addEventListener('click', () => {
             if (audio.paused) {
