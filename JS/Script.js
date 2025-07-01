@@ -32,92 +32,92 @@
         ];
 
         // Notification system
-        const notificationContainer = document.getElementById('notificationContainer');
-        const notificationToggle = document.getElementById('notificationToggle');
-        const testNotificationBtn = document.getElementById('testNotificationBtn');
-        
-        let notificationInterval;
-        let notificationsEnabled = true;
+      //  const notificationContainer = document.getElementById('notificationContainer');
+       // const notificationToggle = document.getElementById('notificationToggle');
+      //  const testNotificationBtn = document.getElementById('testNotificationBtn');
+       // 
+       // let notificationInterval;
+       // let notificationsEnabled = true;
 
         // Create a notification
-        function createNotification(message) {
-            const notification = document.createElement('div');
-            notification.className = 'notification';
-            notification.innerHTML = `
-                <button class="notification-close">&times;</button>
-                <div class="notification-title">
-                    <i class="fas fa-heart"></i>
-                    <span>Birthday Love Note</span>
-                </div>
-                <div class="notification-content">${message}</div>
-                <div class="notification-progress">
-                    <div class="notification-progress-bar"></div>
-                </div>
-            `;
+       // function createNotification(message) {
+           // const notification = document.createElement('div');
+            //notification.className = 'notification';
+            //notification.innerHTML = `
+              // <!-- <button class="notification-close">&times;</button>
+               // <div class="notification-title">
+                   // <i class="fas fa-heart"></i>
+                   // <span>Birthday Love Note</span>
+               // </div>
+              //  <div class="notification-content">${message}</div>
+               // <div class="notification-progress">
+                 //   <div class="notification-progress-bar"></div>
+              //  </div>
+           // `;
             
-            notificationContainer.appendChild(notification);
+           // notificationContainer.appendChild(notification);
             
             // Trigger animation
-            setTimeout(() => {
-                notification.classList.add('show');
-            }, 10);
+          //  setTimeout(() => {
+             //   notification.classList.add('show');
+          //  }, 10);
             
             // Remove notification after 5 seconds
-            setTimeout(() => {
-                notification.classList.remove('show');
-                setTimeout(() => {
-                    notification.remove();
-                }, 500);
-            }, 5000);
+           // setTimeout(() => {
+              //  notification.classList.remove('show');
+                //setTimeout(() => {
+                    //notification.remove();
+               // }, 500);
+           // }, 5000);
             
             // Close button functionality
-            const closeBtn = notification.querySelector('.notification-close');
-            closeBtn.addEventListener('click', () => {
-                notification.classList.remove('show');
-                setTimeout(() => {
-                    notification.remove();
-                }, 500);
-            });
+            //const closeBtn = notification.querySelector('.notification-close');
+           // closeBtn.addEventListener('click', () => {
+                //notification.classList.remove('show');
+                //setTimeout(() => {
+                   // notification.remove();
+               // }, 500);
+           // });
             
             // Create falling hearts effect for notification
-            createFallingHearts();
-        }
+           // createFallingHearts();
+      // }
 
         // Show a random sweet message notification
-        function showSweetNotification() {
-            if (!notificationsEnabled) return;
+        //function showSweetNotification() {
+           // if (!notificationsEnabled) return;
             
-            const randomIndex = Math.floor(Math.random() * sweetMessages.length);
-            createNotification(sweetMessages[randomIndex]);
-        }
+           // const randomIndex = Math.floor(Math.random() * sweetMessages.length);
+            //createNotification(sweetMessages[randomIndex]);
+       // }
 
         // Toggle notifications
-        notificationToggle.addEventListener('change', (e) => {
-            notificationsEnabled = e.target.checked;
+       // notificationToggle.addEventListener('change', (e) => {
+            //notificationsEnabled = e.target.checked;
             
-            if (notificationsEnabled) {
+            //if (notificationsEnabled) {
                 // Start showing notifications immediately and then every hour
-                showSweetNotification();
-                startNotificationInterval();
-            } else {
-                clearInterval(notificationInterval);
-            }
-        });
+               // showSweetNotification();
+              //  startNotificationInterval();
+           // } else {
+               // clearInterval(notificationInterval);
+           // }
+       // });
 
         // Test notification button
-        testNotificationBtn.addEventListener('click', () => {
-            showSweetNotification();
-        });
+        //testNotificationBtn.addEventListener('click', () => {
+           // showSweetNotification();
+       // });
 
         // Start notification interval
-        function startNotificationInterval() {
-            clearInterval(notificationInterval);
-            notificationInterval = setInterval(showSweetNotification, 60 * 60 * 1000); // Every hour
-        }
+       // function startNotificationInterval() {
+          //  clearInterval(notificationInterval);
+          //  notificationInterval = setInterval(showSweetNotification, 60 * 60 * 1000); // Every hour
+      //  }
 
         // Start notifications
-        startNotificationInterval();
-        setTimeout(showSweetNotification, 3000); // Show first notification after 3 seconds
+      //  startNotificationInterval();
+       // setTimeout(showSweetNotification, 3000); // Show first notification after 3 seconds
 
         // Countdown to birthday
         function updateCountdown() {
