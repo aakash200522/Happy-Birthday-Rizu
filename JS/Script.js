@@ -22,7 +22,7 @@
             "Wishing you a day filled with love, laughter, and all the happiness you deserve. Happy Birthday!",
             "To my amazing girlfriend: May your birthday be as wonderful and special as you are to me!",
             "Every moment with you is a treasure. Today, I celebrate you and the joy you bring to my life!",
-            "Happy 17th Birthday! You're not just my girlfriend, you're my best friend and my soulmate.",
+            "Happy 18th Birthday! You're not just my girlfriend, you're my best friend and my soulmate.",
             "Seeing you smile is my favorite thing in the world. I hope your birthday brings you endless smiles!",
             "You're the reason my heart beats faster. Wishing you the happiest of birthdays, my love!",
             "On this special day, I want to remind you how incredibly special you are to me. Happy Birthday!",
